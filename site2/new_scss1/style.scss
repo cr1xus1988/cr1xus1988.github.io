@@ -1,0 +1,1140 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url(../fonts/proximanova-regular.otf);
+}
+@font-face {
+    font-family: "Proxima Nova Bold";
+    src: url(../fonts/proximanova-bold.otf);
+}
+body {
+    overflow: hidden;
+}
+.intro {
+    background-image: url(../images/football.png);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0a0e34;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        background-image: url("../images/768.png");
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        background-size: cover;
+        background-position: 50% 0px;
+    } 
+    .container {
+        max-width: 1530px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 1280px) and (max-width: 1919px) {
+            max-width: 1280px;
+        }
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            max-width: 728px;
+        } 
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            max-width: 320px;
+        } 
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 54px;
+            font-family: "Proxima Nova";
+
+            @media screen and (min-width: 1280px) and (max-width: 1920px) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .header__logo {
+                width: 189px;
+                height: 33px;
+                background: url("../images/-------1.png") no-repeat center center / contain;
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 137px;
+                    height: 24px;
+                    margin-left: 25%;
+                }
+            }
+            .header__text {
+                color: #fff;
+                font-size: 14px;
+                letter-spacing: 0.7px;
+                text-transform: uppercase;
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+        .intro__title {
+            margin-top: 309px;
+            font-family: "Proxima Nova Bold";
+            font-size: 90px;
+            color: #fff;
+
+            @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                margin-top: 194px;
+                font-size: 64px;
+            } 
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                font-size: 32px;
+                margin-top: 141px;
+            }
+            .title__text1 {
+                letter-spacing: 4.96px;
+                position: relative;
+                z-index: 1;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    margin-left: 69px;
+                    z-index: 2;
+                } 
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    margin-left: 10px;
+                    letter-spacing: 1.76px;
+                    z-index: 2;
+                }
+            }
+            .title__text1::before {
+                content: "";
+                display: block;
+                width: 300px;
+                height: 5px;
+                background-color: #5e42b0;
+                position: absolute;
+                top: 80px;
+                left: 364px;
+                transform: rotate(-52deg);
+                z-index: -1;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    top: 95px;
+                    left: 155px;
+                    width: 320px;
+                    z-index: -1;
+                } 
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    top: 48px;
+                    left: 39px;
+                    width: 210px;
+                    z-index: -1;
+                }
+            }
+            .title__text2 {
+                letter-spacing: 4.5px;
+                text-align: right;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    position: relative;
+                    z-index: 1;
+                    text-align: left;
+                    margin-left: 180px;
+                    margin-top: 10px;
+                    z-index: 2;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    margin-left: 65px;
+                    letter-spacing: 1.6px;
+                    z-index: 2;
+                    text-align: left;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .intro__wrap {
+
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            } 
+            .intro__menu {
+                text-align: right;
+                margin-top: 30px;
+
+                @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    text-align: center;
+                    margin-top: 184px;
+                } 
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    margin-top: 45px;
+                    padding-bottom: 20px;
+                    width: 90%;
+                    text-align: center;
+                    justify-content: space-between;
+                } 
+                .menu__link {
+                    font-family: "Proxima Nova";
+                    text-decoration: none;
+                    color: #9071ea;
+                    letter-spacing: 0.7px;
+                    font-size: 14px;
+                    margin-left: 50px;
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 12px;
+                        margin-left: 20px;
+                    } 
+                }
+                .menu__link:first-child {
+                    margin-left: 0px;
+                }
+                .menu__link:hover {
+                    color: #4408fa;
+                }
+                .menu__link:last-child  {
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        margin-left: 34px;
+                    } 
+                }
+            }
+            .intro__buttons {
+                display: flex;
+                justify-content: center;
+                margin-top: 181px;
+                padding-bottom: 110px;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    margin-top: 116px;
+                    padding-bottom: 91px;
+                } 
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    margin-top: 118px;
+                    padding-bottom: 0;
+                } 
+                .button__link {
+                    text-decoration: none;
+                
+                    .button {
+                        width: 311px;
+                        height: 77px;
+                        border-radius: 40px;
+                        background-color: #5e42b0;
+                        box-shadow: 0 16px 24px #0a0e34;
+                        position: relative;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        padding-left: 125px;
+                        font-size: 14px;
+                        letter-spacing: 0.7px;
+                        text-transform: uppercase;
+                        color: #fff;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            width: 142px;
+                            height: 39px;
+                            border-radius: 20px;
+                            font-size: 8px; 
+                            padding-left: 54px;
+                        } 
+                        .button__text1 {
+                            text-decoration: none;
+                            line-height: 18px;
+                            font-family: "Proxima Nova";
+
+                            @media screen and (min-width: 320px) and (max-width: 767px) {
+                                line-height: 12px;
+                            } 
+                        }
+                        .button__text2 {
+                            font-family: "Proxima Nova Bold";
+                        }
+                    }
+                    .button:hover {
+                        background-color: #4408fa;
+                    }
+                    .button_apple {
+                        padding-left: 100px;
+                        margin-right: 50px;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            padding-left: 45px;
+                            margin-right: 8px;
+                        } 
+                    }
+                    .button_apple::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 19;
+                        left: 43px;
+                        width: 33px;
+                        height: 37px;
+                        background: url("../images/icon---apple.png");
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            width: 15px;
+                            height: 17px;
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                            left: 20px;
+                        }
+                    }
+                    .button_google::before  {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        top: 19;
+                        left: 64px;
+                        width: 36px;
+                        height: 39px;
+                        background: url("../images/icon---google-play.png");
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            left: 30px;
+                            width: 16px;
+                            height: 18px;
+                            background-size: 100%;
+                            background-repeat: no-repeat;
+                        } 
+                    }
+                }
+            }
+        }
+    }
+}
+.info {
+    position: relative;
+ 
+    .info_block { 
+
+        .container {
+            max-width: 1670px;
+            margin: 0 auto;
+
+            @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                max-width: 1280px;
+            }
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                max-width: 768px;
+            } 
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                max-width: 320px;
+            } 
+            .info_title {
+                padding-left: 52%;
+                padding-top: 112px;
+                font-family: "Proxima Nova Bold";
+                font-size: 90px;
+                color: #e7e7e7;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    max-width: 50%;
+                    padding-left: 38%;
+                    padding-top: 82px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    max-width: 100%;
+                    font-size: 50px;
+                    padding-left: 19px;
+                    padding-top: 25px;
+                    padding-bottom: 245px;
+                } 
+            }
+            .info_title.atlets {
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 100%;
+                    text-align: center;
+                    background-image: url("../images/atlets1.png");
+                    background-repeat: no-repeat;
+                    background-size: 189px 280px;
+                    background-position: center 70px;
+                } 
+            }
+            .info_title.player {
+                padding-left: 15%;  
+                text-transform: uppercase;
+
+                @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                    padding-left: 5%;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    text-align: left;
+                    max-width: 100%;
+                    padding-left: 5%;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    background-image: url("../images/players.png");
+                    background-repeat: no-repeat;
+                    background-size: 302px 248px;
+                    background-position: center 70px;
+                }
+            }
+            .info_block_content {
+                position: relative;
+                padding-left: 52%;
+                width: 94%;
+                padding-top: 91px;
+                padding-bottom: 62px;
+
+                @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                    left: 0;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    padding-left: 38%;
+                    padding-top: 40px;
+                    padding-bottom: 38px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    padding-left: 7%;
+                    padding-top: 81px;
+                    padding-bottom: 27px;
+                } 
+                .content_title {
+                    font-family: "Proxima Nova Bold";
+                    display: flex;
+                    align-items: flex-start;
+
+                    .content_tit1 {
+                        margin-right: 10px;
+                        padding-bottom: 2px;
+                        font-size: 18px;
+                        letter-spacing: 0.9px;
+                        line-height: 24px;
+                        color: #000;
+                        border-bottom: 5px solid #5e42b0;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            font-size: 14px;
+                            padding-bottom: 0;
+                            line-height: 16px;
+                        } 
+                    }
+                    .content_tit1.white {
+                        border-bottom: 5px solid #efefef;
+                    }
+                    .content_tit1.white.player {
+                        color: #8765dd;
+                        border-bottom: 5px solid #efefef;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            border-bottom: 5px solid #5e42b0;
+                        } 
+                    }
+                    .content_tit2 {
+                        font-size: 36px;
+                        color: #c1c1c1;
+                        letter-spacing: 1.8px;
+                        text-transform: uppercase;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            font-size: 28px;
+                        } 
+                    }
+                }
+                .content_text {
+                    font-family: "Proxima Nova";
+                    color: #000;
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    margin-top: 31px;
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 15px;
+                        letter-spacing: 0.75px;
+                        margin-top: 27px;
+                        width: 100%;
+                    } 
+                }
+                .content_text.white {
+                    color: #fff;
+                    width: 240px;
+
+                    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                        width: 100%;
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 100%;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        color: #000;
+                        width: 100%;
+                        letter-spacing: 0.75px;
+                    } 
+                }
+                .content_text.hid {
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        white-space: nowrap;
+                        overflow: hidden;
+                    }
+                }
+                .circles {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 40px;
+                    align-self: center;
+                    display: none;
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        display: flex;
+                    } 
+                    .circle {
+                        margin-right: 10px;
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        background-color: #d8d8d8;
+                    }
+                    .circle:hover {
+                        background-color: #5c3caf;
+                    }
+                }
+                .circles.block3 {
+                    margin-left: 0px;
+                }
+            }
+            .info_block_content.player {
+                padding-left: 15%;
+                width: 50%;
+
+                @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                    padding-left: 5%;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    max-width: 80%;
+                    padding-left: 5%;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 100%;
+                    padding-left: 5%;
+                }
+            }
+            .info_block_content.image {
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    display: none;
+                } 
+            }
+            .info_block_content.player.image2 {
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    display: none;
+                }
+            }
+            .info_block_content.player.hid {
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    display: none;
+                }
+            }
+        }
+    }
+    .info_block.light_blue {
+        background-color: #f6f3fb;
+        
+    }
+    .info_block.blue {
+        background-color: #682bb6; 
+    }
+    .info_block.blue.player {
+        background-color: #0a0e34;
+
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            background-color: #f6f3fb;
+        }
+    }
+    .info_block_content.hard-blue {
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            display: none;
+        }
+    }
+}
+.info.image1::before {
+    content: "";
+    display: block;
+    width: 725px;
+    height: 980px;
+    position: absolute;
+    top: 40px;
+    left: 15%;
+    background-image: url("../images/atlets1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+        left: 3%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        background-image: url("../images/atlets1.png");
+        top: 72px;
+        left: -179px;
+        width: 525px;
+        height: 717px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 210px;
+        height: 281px;
+        background-image: url("../images/atlets1.png");
+        top: 87px;
+        left: 20%;
+        display: none;
+    } 
+}
+.info.player::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../images/players.png");
+    background-repeat: no-repeat;
+    width: 991px;
+    height: 815px;
+    top: -20px;
+    left: 45%;
+
+    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+        left: 37%;
+        width: 800px;
+        height: 1065px;
+        background-size: 100%;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        background-image: url("../images/players.png");
+        background-size: 100%;
+        top: 37px;
+        left: 43%;
+        width: 671px;
+        height: 565px;
+    }
+    @media screen and (min-width: 320px) and (max-width: 767px) {
+        width: 210px;
+        height: 281px;
+        background-image: url("../images/players.png");
+        top: 87px;
+        left: 15%;
+        background-size: 100%;
+        display: none
+    } 
+}
+.image-content {
+
+    .container {
+        max-width: 1920px;
+        margin: 0 auto;
+
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            max-width: 768px;
+        }
+        .image-content_wrap {
+            position: relative;
+            display: flex;
+
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                flex-direction: column;
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                flex-direction: column;
+            }
+            .image-content_block1 {
+                width: 50%;
+                background-image: url("../images/shutterstock-229044115.png");
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: cover;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 100%;
+                    height: 584px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    height: 351px;
+                    width: 100%;
+                }
+            }
+            .image-content_block1.end {
+                background-image: url("../images/players-and-coach.png");
+            }
+            .image-content_block1.last {
+                background-image: url("../images/shutterstock.png");
+            }
+            .image-content_block2 {
+                width: 50%;
+                padding-left: 128px;
+                padding-top: 257px;
+                padding-bottom: 214px;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    width: 100%;
+                    padding-top: 87px;
+                    padding-left: 5%;
+                    padding-bottom: 110px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    padding-top: 35px;
+                    width: 100%;
+                    padding-left: 5%;
+                    padding-bottom: 79px;
+                }
+                .image-content_title {
+                    font-family: "Proxima Nova Bold";
+                    font-size: 90px;
+                    text-transform: uppercase;
+                    color: #c1c1c1;
+
+                    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                        width: 80%;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 28px;
+                    }
+                }
+                .image-content_text {
+                    position: relative;
+                    font-family: "Proxima Nova";
+                    font-size: 24px;
+                    line-height: 28px;
+                    letter-spacing: 1.2px;
+                    color: #000;
+                    width: 45%;
+                    margin-top: 115px;
+
+                    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                        width: 90%;
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 90%;
+                        margin-top: 36px;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 16px;
+                        line-height: 20px;
+                        width: 90%;
+                        margin-top: 23px;
+                    }
+                }
+                .image-content_text.end {
+                    width: 50%;
+
+                    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                        width: 90%;
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 90%;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 90%;
+                    }
+                }
+                .image-content_text.last {
+                    width: 65%;
+
+                    @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                        width: 90%;
+                    }
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        width: 95%;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 100%;
+                    }
+                }
+                .image-content_text::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    width: 22px;
+                    height: 5px;
+                    margin-top: 164px;
+                    border-radius: 2px;
+                    background-color: #5e42b0;
+
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        margin-top: 105px;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        margin-top: 94px;
+                    }
+                }
+            }
+            .image-content_block3 {
+                position: absolute;
+                top: 30%;
+                left: 45.5%;
+                display: flex;
+                width: 168px;
+                height: 155px;
+                background-color: #5e42b0;
+
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    left: 5%;
+                    top: 480px;
+                }
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    top: 300px;
+                    width: 70px;
+                    height: 70px;
+                    left: 5%;
+                }
+                .image-content_block3_text {
+                    font-family: "Proxima Nova Bold";
+                    color: #f5f6f7;
+                    padding-bottom: 9px;
+                    font-size: 24px;
+                    border-bottom: 2px solid #956acc;
+                    margin: auto;
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 14px;
+                        padding-bottom: 3px;
+                    }
+                }
+            }
+        }
+        .image-content_wrap.end {
+            flex-direction: row-reverse;
+
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                flex-direction: column;
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                flex-direction: column;
+            }
+        }
+    }
+}
+footer {
+    background-image: url(../images/photo);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #0a0e34;
+    
+    .footer-content {
+        padding-bottom: 197px;
+        
+        @media screen and (min-width: 768px) and (max-width: 1279px) {
+            padding-bottom: 128px;
+        }
+        @media screen and (min-width: 320px) and (max-width: 767px) {
+            padding-bottom: 128px;
+        }
+        .footer-wrap {
+            padding-top: 229px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                flex-direction: column;
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                padding-top: 97px;
+                flex-direction: column;
+            }
+            .footer_button {
+                width: 130px;
+                height: 137px;
+                background: url("../images/artwork.png") no-repeat center center;
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    width: 73px;
+                    height: 78px;
+                    background-size: 100%;
+                }
+            }
+            .footer_button:hover {
+                opacity: 0.8;
+            }
+            .footer-content_title {
+                font-family: "Proxima Nova Bold";
+                margin-left: 36px;
+
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    margin-left: 0;
+                    text-align: center;
+                }
+                .footer-content_title_text1 {
+                    font-size: 90px;
+                    color: #fff;
+                    letter-spacing: 4.96px;
+                    position: relative;
+
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        font-size: 80px;
+                        margin-top: 82px;
+                        z-index: 3;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 34px;
+                        letter-spacing: 1.7px;
+                        margin-top: 57px;
+                        z-index: 3;
+                    }
+                }
+                .footer-content_title_text1::before {
+                    content: "";
+                    display: block;
+                    width: 175px;
+                    height: 5px;
+                    background-color: #5e42b0;
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    transform: rotate(-52deg);
+
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        z-index: -1;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 100px;
+                        top: 25px;
+                        left: -20px;
+                        z-index: -1;
+                    }
+                }
+                .footer-content_title_text2 {
+                    font-size: 36px;
+                    color: #a496ca;
+                    position: relative;
+
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        z-index: 2;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        font-size: 15px;
+                        padding-top: 10px;
+                    }
+                }
+                .footer-content_title_text2::before {
+                    content: "";
+                    display: block;
+                    width: 300px;
+                    height: 5px;
+                    background-color: #5e42b0;
+                    position: absolute;
+                    top: -30px;
+                    left: 350px;
+                    transform: rotate(-52deg);
+
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        left: 300px;
+                        z-index: -1;
+                    }
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 180px;
+                        top: 0px;
+                        left: 77px;
+                    }
+                }
+            }
+        }
+        .buttons {
+            margin-top: 163px;
+            display: flex;
+            justify-content: center;
+
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                margin-top: 198px;
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                margin-top: 72px;
+            }
+            .button_link {
+                text-decoration: none;
+
+                .button {
+                    width: 311px;
+                    height: 77px;
+                    border-radius: 40px;
+                    background-color: #5e42b0;
+                    box-shadow: 0 16px 24px #0a0e34;
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-left: 125px;
+                    font-size: 14px;
+                    letter-spacing: 0.7px;
+                    text-transform: uppercase;
+                    color: #fff;
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 142px;
+                        height: 39px;
+                        border-radius: 20px;
+                        font-size: 8px; 
+                        padding-left: 54px;
+                    } 
+                    .button_text1 {
+                        text-decoration: none;
+                        line-height: 18px;
+                        font-family: "Proxima Nova";
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            line-height: 12px;
+                        }
+                    }
+                    .button_text2 {
+                        font-family: "Proxima Nova Bold";
+                    }
+                }
+                .button:hover {
+                    background-color: #4408fa;
+                }
+                .button.apple {
+                    padding-left: 105px;
+                    margin-right: 50px;
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        padding-left: 45px;
+                        margin-right: 8px;
+                    } 
+                }
+                .button.apple::before {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 19;
+                    left: 43px;
+                    width: 33px;
+                    height: 37px;
+                    background: url("../images/icon---apple.png");
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 15px;
+                        height: 17px;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                        left: 20px;
+                    }
+                }
+                .button.google::before  {
+                    content: "";
+                    display: block;
+                    position: absolute;
+                    top: 19;
+                    left: 64px;
+                    width: 36px;
+                    height: 39px;
+                    background: url("../images/icon---google-play.png");
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        left: 30px;
+                        width: 16px;
+                        height: 18px;
+                        background-size: 100%;
+                        background-repeat: no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .footer-navigate {
+        background: rgba(10, 14, 52, 0.6);
+
+        .container {
+            max-width: 1820px;
+            margin: 0 auto;
+
+            @media screen and (min-width: 768px) and (max-width: 1279px) {
+                max-width: 768px;
+            } 
+            @media screen and (min-width: 320px) and (max-width: 767px) {
+                max-width: 320px;
+            } 
+            .footer-navigate_content {
+                padding-top: 71px;
+                padding-bottom: 67px;
+                display: flex;
+                justify-content: space-between;
+
+                @media screen and (min-width: 1280px) and (max-width: 1919px) {
+                    padding-left: 20px;
+                    padding-right: 20px;
+                }
+                @media screen and (min-width: 768px) and (max-width: 1279px) {
+                    padding-top: 36px;
+                    padding-bottom: 67px;
+                } 
+                @media screen and (min-width: 320px) and (max-width: 767px) {
+                    padding-top: 20px;
+                    padding-bottom: 15px;
+                } 
+                .footer_logo {
+                    background-image: url(../images/foot_logo.png);
+                    background-repeat: no-repeat;
+                    width: 172px;
+                    height: 30px;
+
+                    @media screen and (min-width: 320px) and (max-width: 1279px) {
+                        display: none;
+                    } 
+                }
+                .footer_social {
+                    display: flex;
+                    width: 170px;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-left: 90px;
+
+                    @media screen and (min-width: 768px) and (max-width: 1279px) {
+                        margin-left: 40%;
+                    } 
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        width: 124px;
+                        margin-left: 30%;
+                    }
+                    .face {
+                        width: 15px;
+                        height: 27px;
+                        background: url("../images/forma-1.png") no-repeat center center;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            width: 10px;
+                            height: 18px;
+                            background-size: 100%;
+                        } 
+                    }
+                    .face:hover {
+                        opacity: 0.7;
+                    }
+                    .twitt {
+                        width: 27px;
+                        height: 22px;
+                        background: url("../images/forma-2.png") no-repeat center center;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            width: 18px;
+                            height: 15px;
+                            background-size: 100%;
+                        }
+                    }
+                    .twitt:hover {
+                        opacity: 0.7;
+                    }
+                    .insta {
+                        width: 24px;
+                        height: 25px;
+                        background: url("../images/forma-3.png") no-repeat center center;
+
+                        @media screen and (min-width: 320px) and (max-width: 767px) {
+                            width: 17px;
+                            height: 17px;
+                            background-size: 100%;
+                        }
+                    }
+                    .insta:hover {
+                        opacity: 0.7;
+                    }
+                }
+                .footer-navigate_text {
+                    font-family: "Proxima Nova";
+                    color: #fff;
+                    font-weight: 400;
+                    letter-spacing: 1px;
+
+                    @media screen and (min-width: 320px) and (max-width: 1279px) {
+                        display: none;
+                    } 
+                }
+            }
+        }
+    }
+}
